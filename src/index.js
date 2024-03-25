@@ -5,6 +5,7 @@ import { cwd } from 'node:process';
 import render from './formatters/index.js';
 import getParseFile from './parsers.js';
 
+
 const makeAst = (beforeConfig, afterConfig) => {
   const fileKeys = _.sortBy(_.union(_.keys(beforeConfig), _.keys(afterConfig)));
   const result = fileKeys.map((key) => {
