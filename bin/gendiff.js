@@ -13,4 +13,4 @@ program
     console.log(genDiff(firstConfig, secondConfig, program.opts().format));
   });
 
-program.parse;
+program.parse();
