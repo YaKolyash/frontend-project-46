@@ -29,7 +29,7 @@ describe('gendiff', () => {
             const diff = genDiff(before, after, format);
 
             test(`compare two files ${format || 'no'} format`, () =>{
-                expect(diff).toEqual(expected);
+                expect(diff).toBe(expected);
             });
         },
     );
