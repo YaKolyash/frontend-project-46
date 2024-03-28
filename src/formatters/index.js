@@ -10,6 +10,6 @@ export default (diffTree, format = 'stylish') => {
     case 'json':
       return JSON.stringify(diffTree, '', 1);
     default:
-      throw new Error(`Unknown format: '${format}'!`);
+      throw new Error(`Unknown format: '${format}'`);
   }
 };
